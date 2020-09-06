@@ -1,6 +1,13 @@
-console.log('Hello');
+import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
+import { CharactersCollection } from './CharactersCollection';
 
-const logSomething = () => {
-  console.log('something');
-};
-logSomething();
+const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
+const sorter = new Sorter(numbersCollection);
+sorter.sort();
+console.log(numbersCollection.data);
+
+const charactersCollection = new CharactersCollection('jadajADASDJ');
+const sorter1 = new Sorter(charactersCollection);
+sorter1.sort();
+console.log(charactersCollection.data);
