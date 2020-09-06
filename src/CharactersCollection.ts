@@ -1,6 +1,6 @@
 export class CharactersCollection {
   constructor(public data: string) {}
-  //getter
+  //getter transforms method into a property kind of
   get length(): number {
     return this.data.length;
   }

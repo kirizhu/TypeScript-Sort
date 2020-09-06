@@ -6,7 +6,7 @@ var NumbersCollection = /** @class */ (function () {
         this.data = data;
     }
     Object.defineProperty(NumbersCollection.prototype, "length", {
-        //getter
+        //getter transforms method into a property kind of
         get: function () {
             return this.data.length;
         },
