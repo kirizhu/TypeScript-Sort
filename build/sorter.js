@@ -1,9 +1,12 @@
 "use strict";
+// Instructions on how to be eligible for sorting
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
-//abstract class only used as parent class
-//cant be used to create object directly
-//the implemented methods can refer to other methods that do not exist yet
 var Sorter = /** @class */ (function () {
     function Sorter() {
     }

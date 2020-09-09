@@ -1,4 +1,5 @@
 import { Sorter } from './Sorter';
+
 class Node {
   next: Node | null = null;
   constructor(public data: number) {}
@@ -7,12 +8,11 @@ class Node {
 export class LinkedList extends Sorter {
   head: Node | null = null;
 
-  //TODO: understand this
   add(data: number): void {
     const node = new Node(data);
     if (!this.head) {
       this.head = node;
-      return; //exit early without returning anything
+      return;
     }
     let tail = this.head;
     while (tail.next) {
@@ -37,7 +37,7 @@ export class LinkedList extends Sorter {
       throw new Error('Index out of bounce');
     }
     let counter = 0;
-    //help ts with this type annotation
+    //help the tsc with this type annotation
     let node: Node | null = this.head;
     while (node) {
       if (counter === index) {

@@ -1,12 +1,10 @@
 // Instructions on how to be eligible for sorting
-interface Sortable {
-  length: number;
-  compare(leftIndex: number, rightIndex: number): boolean;
-  swap(leftIndex: number, rightIndex: number): void;
-}
-//abstract class only used as parent class
-//cant be used to create object directly
-//the implemented methods can refer to other methods that do not exist yet
+// interface Sortable {
+//   length: number;
+//   compare(leftIndex: number, rightIndex: number): boolean;
+//   swap(leftIndex: number, rightIndex: number): void;
+// }
+
 export abstract class Sorter {
   //child classes have to promise to implement these methods
   abstract compare(leftIndex: number, rightIndex: number): boolean;

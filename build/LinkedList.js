@@ -29,12 +29,11 @@ var LinkedList = /** @class */ (function (_super) {
         _this.head = null;
         return _this;
     }
-    //TODO: understand this
     LinkedList.prototype.add = function (data) {
         var node = new Node(data);
         if (!this.head) {
             this.head = node;
-            return; //exit early without returning anything
+            return;
         }
         var tail = this.head;
         while (tail.next) {
@@ -63,7 +62,7 @@ var LinkedList = /** @class */ (function (_super) {
             throw new Error('Index out of bounce');
         }
         var counter = 0;
-        //help ts with this type annotation
+        //help the tsc with this type annotation
         var node = this.head;
         while (node) {
             if (counter === index) {
